@@ -163,6 +163,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .about-me-section {
@@ -588,6 +589,105 @@ body {
     font-size: 0.9em;
     line-height: 1.5;
   }
+ 
+
+ /* Centering the blog container */
+#blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Full width of parent */
+  padding: 20px; /* Optional padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Style for each blog post */
+.blog-post {
+  width: 100%;
+  max-width: 900px; /* Maximum width of blog posts */
+  margin: 20px 0; /* Space between posts */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width */
+  text-align: center; /* Center text and images */
+  background-color: #fff; /* Background color for contrast */
+}
+.blog-post h2 {
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font */
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: 700; /* Adjust font weight as needed */
+  color: #333; /* Optional: Adjust the color of the font */
+}
+.blog-post p {
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Optional: Adjust the color of the font */
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+/* Style for images inside blog posts */
+.blog-post img {
+  max-width: 100%; /* Responsive images */
+  height: 500px;
+  border-radius: 5px; /* Rounded corners for images */
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+
+
+.admin-link, .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.admin-link:hover, .back-link:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#admin-blog-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically (if container height is fixed) */
+  width: 100%; /* Ensures the container takes the full width of its parent */
+}
+
+
+
 
 
 
